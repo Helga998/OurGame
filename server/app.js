@@ -16,7 +16,7 @@ app.use(express.json());
 
 const indexRouteApi = require('./routes/index.routes');
 
-app.use('/', indexRouteApi);
+app.use('/api', indexRouteApi);
 
 app.listen(3000, () => {
     console.log(`Сервер работает на 3000 порту!!!`);
