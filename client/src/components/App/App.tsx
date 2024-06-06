@@ -34,7 +34,7 @@ function App(): JSX.Element {
           element: <SignUp user={user} setUser={setUser}/>,
         },
         {
-          path: "/dogs",
+          path: "/dogs/:id",
           element: <DogCards/>,
         },
       ],
