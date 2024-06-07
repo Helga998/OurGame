@@ -10,9 +10,11 @@ type MenuProps = {
 
 export default function Menu({user, setUser} : MenuProps): JSX.Element {
   return (
+
     <nav className="navbar navbar-expand-lg bg-secondary-subtle  " data-bs-theme="dark">
       <div className="container-fluid" >
         <Link to={`/`} className="navbar-brand fw-bolder fs-1">
+
           Hello
         </Link>
 
@@ -73,6 +75,8 @@ export default function Menu({user, setUser} : MenuProps): JSX.Element {
                     Зарегистрироваться
                   </Link>
                 </li>
+                
+                
               </>
             )}
           </ul>
