@@ -59,7 +59,7 @@ export default function Menu({user, setUser} : MenuProps): JSX.Element {
                 </li> */}
                 <li className="nav-item">
                   <Link to={`dogs`} className="nav-link">
-                    Dogs
+                    Guess
                   </Link>
                 </li>
               </>
