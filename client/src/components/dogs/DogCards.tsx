@@ -55,7 +55,7 @@ function DogCards() {
     <div className='d-flex justify-content-center'>
       <div className='row'>
       <img src={dog.img} alt="" width='300px' height='300px' />
-        <input placeholder='Введи ответ' value={answer} onChange={(e)=> setAnswer(e.target.value)} disabled={rightAnswer? true : false}></input>
+        <input placeholder='Введи ответ' value={answer} onChange={(e)=> setAnswer(e.target.value)} ></input>
         {rightAnswer
           ? <button className="btn btn-outline-success" onClick={()=>   setRightAnswer('')}>
               <Link className="link-underline-light link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fw-bold" to={`/dogs/${+id + 1}`}>Next</Link>

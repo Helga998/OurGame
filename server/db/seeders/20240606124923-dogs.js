@@ -13,7 +13,7 @@ module.exports = {
       },
       {
         breed: 'Ньюфаундлен',
-        img: 'https://w.forfun.com/fetch/7a/7a0dcbac55b77999f58ad5fee6d2cb94.jpeg',
+        img: 'https://lapkins.ru/upload/iblock/039/03964593b999cdd12d8b8cab160cfa62.jpg',
         description: 'очень классный , иногда немного взъерошеннй',
         createdAt: new Date(),
         updatedAt: new Date(),
@@ -62,7 +62,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        breed: 'мощное кунгуру',
+        breed: 'мощное кeнгуру',
         img: 'https://do-slez.com/uploads/posts/2019-07/1563947134_orig.jpg',
         description: 'без компромиссов..., в школе не учился',
         createdAt: new Date(),
@@ -91,15 +91,15 @@ module.exports = {
       },
       {
         breed: 'болонка',
-        img: 'https://superwalls.top/uploads/posts/2022-09/1662407320_16-gamerwall-pro-p-zhivotnie-v-ochkakh-instagram-22.jpg',
+        img: 'https://i1.imageban.ru/out/2023/03/07/8ac69e9d7098e03df9b331e245164f5d.jpg',
         description: 'нежная, пушистая, лечит деток ',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
         breed: 'бурундук',
-        img: 'https://superwalls.top/uploads/posts/2022-09/1662407320_16-gamerwall-pro-p-zhivotnie-v-ochkakh-instagram-22.jpg',
-        description: 'очень лбит учиться.ю будущий frontend разработчик',
+        img: 'https://avatars.mds.yandex.net/i?id=e6f4e1c061232e72214a7c4280cf5accd9bc1c4b-10401675-images-thumbs&n=13',
+        description: 'очень любит учиться, будущий frontend разработчик',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
