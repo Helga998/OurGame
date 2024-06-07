@@ -38,7 +38,7 @@ function DogCards() {
     <>
       <div className="d-flex justify-content-center">
         <div className="row">
-          <img src={dog.img} alt="" width="300px" height="500px" />
+          <img src={dog.img} alt="" width="1000px" height="800px" />
           <input
             placeholder="Введи ответ"
             value={answer}
