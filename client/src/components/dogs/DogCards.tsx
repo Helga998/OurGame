@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import axiosInstance from '../../axiosInstance';
-import DogCard from './DogCard';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
+import axiosInstance from '../../axiosInstance';
+import DogCard from './DogCard';
 import Modal from '../Modal';
  
 
@@ -67,9 +67,9 @@ function DogCards() {
             placeholder="Введи ответ"
             value={answer}
             onChange={(e) => setAnswer(e.target.value)}
-          ></input>
+           />
           {rightAnswer ? (
-            <button className="btn btn-outline-success">
+            <button className="btn btn-outline-success" onClick={()=>   setRightAnswer('')}>
               <Link
                 className="link-underline-light link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fw-bold"
                 to={`/dogs/${+id + 1}`}
@@ -82,7 +82,7 @@ function DogCards() {
               width="40px"
               height="50px"
               className="btn btn-outline-warning link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover fw-bold"
-              class="btn btn-dark"
+              className="btn btn-dark"
               type="button"
               onClick={checkAnswer}
             >
