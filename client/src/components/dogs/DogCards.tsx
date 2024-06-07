@@ -37,9 +37,11 @@ function DogCards() {
   return (
     <>
       <div className="d-flex justify-content-center">
-        <div className="row">
+        <div className="row ">
           <img src={dog.img} alt="" width="1000px" height="800px" />
-          <input
+          <input 
+          width='200px'
+          
             placeholder="Введи ответ"
             value={answer}
             onChange={(e) => setAnswer(e.target.value)}
