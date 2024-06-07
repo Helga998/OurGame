@@ -6,6 +6,7 @@ import type { UserType } from '../user.type';
 import SignIn from '../../pages/Auth/SignIn';
 import SignUp from '../../pages/Auth/SignUp';
 import DogCards from '../dogs/DogCards';
+import HomePage from '../../pages/Home/HomePage'
 
 function App(): JSX.Element {
   const [user, setUser] = useState<UserType | null>(null);
@@ -25,6 +26,10 @@ function App(): JSX.Element {
       element: <Layout user={user} setUser={setUser}/>,
 
       children: [
+        {
+          path: '/',
+          element: <HomePage />,
+        },
         {
           path: "signIn",
           element: <SignIn user={user} setUser={setUser}/>,
