@@ -10,9 +10,9 @@ type MenuProps = {
 
 export default function Menu({user, setUser} : MenuProps): JSX.Element {
   return (
-    <nav className="navbar navbar-expand-lg bg-secondary-subtle">
+    <nav className="navbar navbar-expand-lg bg-secondary-subtle  " data-bs-theme="dark">
       <div className="container-fluid">
-        <Link to={`/`} className="navbar-brand" >
+        <Link to={`/`} className="navbar-brand fw-bolder fs-1">
           Hello
         </Link>
 
@@ -30,11 +30,7 @@ export default function Menu({user, setUser} : MenuProps): JSX.Element {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link
-                to={`dogs/1`}
-                className="nav-link active"
-                aria-current="page"
-              >
+              <Link to={`dogs/1`} className="nav-link active" aria-current="page">
                 Dogs
               </Link>
             </li>
@@ -78,7 +74,7 @@ export default function Menu({user, setUser} : MenuProps): JSX.Element {
                   </Link>
                 </li>
               </>
-            )} 
+            )}
           </ul>
         </div>
       </div>

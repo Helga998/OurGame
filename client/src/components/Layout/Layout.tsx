@@ -6,7 +6,7 @@ function Layout({user, setUser}) {
   return (
     <div>
       <Menu user={user} setUser={setUser} />
-      <div className="container" style={{ marginTop: "20px" }}></div>
+      <div className="container" style={{ marginTop: "10px" }}></div>
       <Outlet />
     </div>
   );
