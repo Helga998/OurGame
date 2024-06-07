@@ -3,6 +3,7 @@ import axiosInstance from '../../axiosInstance';
 import DogCard from './DogCard';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
+import Modal from '../Modal';
  
 
 function DogCards() {
@@ -10,6 +11,7 @@ function DogCards() {
   const [dog, setDog] = useState('');
   const [answer, setAnswer] = useState('');
   const[rightAnswer, setRightAnswer] = useState('');
+  // const[modal, setModal] = useState(false)
 
   useEffect(() => {
     loadData();
@@ -21,11 +23,20 @@ function DogCards() {
   }
   console.log(dog, 'dog');
 
+  // function validate(input) {
+  //   if (input.trim() === '') {
+  //     setModal(true)
+  //     return 
+  //   }
+  // }
+
   function checkAnswer() {
+    // validate(answer)
     if(answer.toLowerCase() === dog.Answer.answer.toLowerCase()) {
       setRightAnswer('Wow!!!')
       setAnswer('')
       console.log('Wow!!!')
+      
     } else {
       setRightAnswer(`No!!
       Правильный ответ: ${dog.Answer.answer}`)
@@ -34,7 +45,14 @@ function DogCards() {
     }
   }
 
+
+  // const handleStateClear = () => {
+  //   setRightAnswer('')
+
+  // }
+
   return (
+
     <>
       <div className="d-flex justify-content-center">
         <div className="row ">
@@ -70,6 +88,7 @@ function DogCards() {
             </button>
           )}
         </div>
+
       </div>
 
       <div className="fs-2 fw-bold">{rightAnswer}</div>
